@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* nav,.header,.center,.nav,.main,.aside,.footer{
+            display:block;
+        } */
+        nav{
+            background-color: white;
+            z-index: 100;
+            top:0;
+            left:0;
+            right:0;
+            position: fixed;
+            width: 100%;
+            height: 100px;
+            /* border: 1px solid black; */
+        }
+        nav .name{
+            float:left;
+            margin-top:15px;
+            margin-left: 10%;
+            width:70px;
+            height:70px;
+            /* border: 1px solid black; */
+        }
+        .account .button{
+            display: inline-block;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            width:70px;
+            height:50px;
+            margin-right: 10px;
+            border: 1px solid black;
+            border-radius: 20%;
+            cursor: pointer;
+        }
+        nav .account{
+            display:flex;
+            justify-content: center;
+            flex-direction: row;
+            float:right;
+            margin-top:25px;
+            margin-right: 100px;
+            /* border: 1px solid black; */
+        }
+        nav .menu{
+            display: flex;
+            list-style: none;
+            width: 700px;
+            height: 100%;
+            text-align: center;
+            margin: 0px;
+            margin-left: 350px;
+        }
+        .menu li{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left:50px;
+            /* border:1px solid black; */
+            width:70px;
+            height:100px;
+            margin-bottom: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            border-bottom: red solid 5px;
+        }
+        .header{
+            margin-top: 102px;
+            width:100%;
+            height:100px;
+            border: 1px solid black;
+        }
+        .middle{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+        }
+        .center{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 80%;
+            height: 1000px;
+        }
+        .nav{
+            height: 1000px;
+            flex-grow: 1;
+            border: 1px solid black;
+        }
+        .main{
+            height: 1000px;
+            flex-grow: 2;
+            border: 1px solid black;
+        }
+        .aside{
+            height: 1000px;
+            flex-grow: 1;
+            border: 1px solid black;
+        }
+        .footer{
+
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img class="name" src="ket.png"></img>
+        <div class="account">
+            <div class="button">로그인</div>
+            <div class="button">회원가입</div>
+        </div> 
+        <ul class="menu">
+            <li>게시판</li>
+            <li>시간표</li>
+            <li>학점계산기</li>
+            <li>...</li>
+            <li>친구</li>
+        </ul>
+    </nav>
+    <div class="header">
+
+    </div>
+    <div class="middle">
+        <div class="center">
+            <div class="nav">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident praesentium vitae iusto magnam asperiores eligendi, nemo officia voluptates! Possimus placeat quisquam neque, consectetur voluptates voluptatem expedita excepturi nam iste.
+                Quaerat est possimus quos aut et repellendus debitis aliquam? Repellat optio molestias culpa consequuntur nesciunt vel perspiciatis omnis corrupti voluptates et, architecto, temporibus atque recusandae consequatur vitae officiis tenetur quibusdam.
+                Distinctio nemo, maiores eveniet tenetur, odit officia magni quas cumque ratione doloremque sunt beatae modi aliquid unde eligendi eaque soluta dolor illum quae vitae. Voluptate accusantium nemo voluptas eaque deserunt?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima cumque aspernatur, odio eum ab, exercitationem perspiciatis omnis ullam modi nesciunt porro unde. Tempore iste ullam voluptatem praesentium illo repellat libero?
+            </div>
+            <div class="main">
+               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium minima magni provident maiores iure consequuntur, accusantium in aperiam, illum repudiandae ab soluta recusandae nam, odit culpa repellendus qui quo eum?
+               Maxime omnis molestiae quae eveniet ad, odit optio commodi deserunt incidunt, dolorem reprehenderit. Enim animi cupiditate, hic aperiam cumque quas maiores eligendi aliquid veniam quo quidem quaerat molestiae, beatae dolore?
+               Debitis veniam explicabo minus at, aliquid ex alias! Aperiam dolores, quo minima perspiciatis deleniti hic fugit explicabo corporis magni sequi aliquam aspernatur beatae qui accusamus neque ad suscipit dignissimos ducimus.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, consequatur? Tenetur fugit distinctio, amet molestiae, sint nemo vel eius voluptatibus illum aliquid quia, consequuntur impedit quod quo fuga nisi corrupti!
+            </div>
+            <div class="aside">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eveniet iusto, nam voluptatibus dolorem et laborum facere quas ipsum iure quam voluptates ea magni cupiditate quae quod deserunt sit laboriosam.
+               Neque magni nulla odit iure aperiam ducimus delectus expedita provident voluptatem id obcaecati laudantium rerum, at doloribus aliquam quibusdam consequatur ipsam quaerat repellat repellendus sint aliquid numquam ex dolore. Unde?
+               Deserunt facilis, animi fuga ullam modi quam iusto, eos aliquid dicta deleniti nobis ab, quaerat velit necessitatibus voluptate. Qui nihil nam corrupti quisquam doloribus dolores sapiente, porro molestias omnis eaque.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae architecto assumenda, neque obcaecati distinctio quis at a asperiores temporibus. Adipisci sunt distinctio eveniet earum rerum corrupti error saepe, quod necessitatibus.
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+</body>
+</html>
