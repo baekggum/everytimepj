@@ -30,15 +30,14 @@
             /* border: 1px solid black; */
         }
         .account .button{
-            display: inline-block;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
             width:70px;
-            height:50px;
+            height:40px;
             margin-right: 10px;
             border: 1px solid black;
-            border-radius: 20%;
+            border-radius: 10px;
             cursor: pointer;
         }
         nav .account{
@@ -55,7 +54,7 @@
             display: flex;
             list-style: none;
             width: 700px;
-            height: 100%;
+            height: 101px;
             text-align: center;
             margin: 0px;
             margin-left: 30%;
@@ -125,22 +124,43 @@
         }
         .card .box{
             display: grid;
-            justify-content: center;
             align-items: center;
             position: relative;
             border: 1px solid black;
             width:100%;
         }
+        .box:nth-child(n+2){
+            border-top:none;
+        }
+        .box span{
+            margin-left:5%;
+            font-weight: bold;
+        }
         .aside{
             margin: 15px 0;
             right: 5%;
             width: 325px;
-            height: 600px;
+            height: 800px;
             min-width: 200px;
-            border: 1px solid black;
+            /* border: 1px solid black; */
+        }
+        .aside .search{
+            margin-top: 3%;
+            border: 1px solid rgb(214,214,214);
+            width: 100%;
+            height: 50px;
+        }
+        .aside .card{
+            margin-top:10px;
+            display: flex;
+            float:left;
+            flex-wrap: wrap;
+            height:140px;
+            width:100%;
+            margin: 0;
         }
         .footer{
-
+            margin:0;
         }
     </style>
 </head>
@@ -148,14 +168,14 @@
     <nav>
         <a href="#""><img class="name" src="ket.png"></a>
         <div class="account">
-            <div class="button">로그인</div>
-            <div class="button">회원가입</div>
+            <div class="button" ><span style="text-align: center;">로그인</span></div>
+            <div class="button" ><span style="text-align: center;">회원가입</span></div>
         </div> 
         <ul class="menu">
             <li>게시판</li>
             <li>시간표</li>
             <li>학점계산기</li>
-            <li>...</li>
+            <li>강의평가</li>
             <li>친구</li>
         </ul>
     </nav>
@@ -170,13 +190,13 @@
             <div class="main">
                 <div class="cd">
                     <div class="card">
-                        <div class="box">자유 게시판</div>
+                        <div class="box" style="color: rgb(242,156,159)"><span>자유 게시판</span></div>
                         <div class="box"></div>
                         <div class="box"></div>
                         <div class="box"></div>
                     </div>
                     <div class="card">
-                        <div class="box">비밀 게시판</div>
+                        <div class="box" style="color: rgb(242,156,159)"><span>비밀 게시판</span></div>
                         <div class="box"></div>
                         <div class="box"></div>
                         <div class="box"></div>
@@ -184,13 +204,13 @@
                 </div>
                 <div class="cd">
                     <div class="card">
-                        <div class="box">졸업생 게시판</div>
+                        <div class="box" style="color: rgb(242,156,159)"><span>졸업생 게시판</span></div>
                         <div class="box"></div>
                         <div class="box"></div>
                         <div class="box"></div>
                     </div>
                     <div class="card">
-                        <div class="box">새내기 게시판</div>
+                        <div class="box" style="color: rgb(242,156,159)"><span>새내기 게시판</span></div>
                         <div class="box"></div>
                         <div class="box"></div>
                         <div class="box"></div>
@@ -198,13 +218,13 @@
                 </div>
                 <div class="cd">
                     <div class="card">
-                        <div class="box">취업 게시판</div>
+                        <div class="box" style="color: rgb(242,156,159)"><span>취업 게시판</span></div>
                         <div class="box"></div>
                         <div class="box"></div>
                         <div class="box"></div>
                     </div>
                     <div class="card">
-                        <div class="box">장터 게시판</div>
+                        <div class="box" style="color: rgb(242,156,159)"><span>장터 게시판</span></div>
                         <div class="box"></div>
                         <div class="box"></div>
                         <div class="box"></div>
@@ -212,13 +232,13 @@
                 </div>
                 <div class="cd">
                     <div class="card">
-                        <div class="box">홍보 게시판</div>
+                        <div class="box" style="color: rgb(242,156,159)"><span>홍보 게시판</span></div>
                         <div class="box"></div>
                         <div class="box"></div>
                         <div class="box"></div>
                     </div>
                     <div class="card">
-                        <div class="box">동아리 게시판</div>
+                        <div class="box" style="color: rgb(242,156,159)"><span>동아리 게시판</span></div>
                         <div class="box"></div>
                         <div class="box"></div>
                         <div class="box"></div>
@@ -226,23 +246,45 @@
                 </div>
                 <div class="cd">
                     <div class="card">
-                        <div class="box">정보 게시판</div>
+                        <div class="box" style="color: rgb(242,156,159)"><span>정보 게시판</span></div>
                         <div class="box"></div>
                         <div class="box"></div>
                         <div class="box"></div>
                     </div>
                     <div class="card">
-                        <div class="box"></div>
+                        <div class="box" style="color: rgb(242,156,159)"><span></span></div>
                         <div class="box"></div>
                         <div class="box"></div>
                         <div class="box"></div>
                     </div>
                 </div>
-                
-                
             </div>
             <div class="aside">
-               
+                <input type="search" class="search" placeholder="전체 게시판의 글을 검색하세요!"></input>
+                <div class="card" style="margin-top: 20px;">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+                <div class="card" style="margin-top: 20px;">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+                <div class="card" style="margin-top: 20px;">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+                <div class="card" style="margin-top: 20px;">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
             </div>
         </div>
     </div>
